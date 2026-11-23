@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Primavera P6 en Obra · Libro, Guías Técnicas y Ruta Cero</title>
+  <meta name="description" content="Hub oficial en español de Primavera P6 en Obra: Ruta Cero gratuita (21 pág.), Guías Técnicas de terreno y Libro Profesional (340 pág.) + Kit Excel v5 editable.">
+  <link rel="icon" href="assets/grua.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;700&family=JetBrains+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="engine/scrollcraft.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<span data-sc-progress aria-hidden="true"></span>
+
+<header class="dossier-nav">
+  <a class="brand-mark" href="#inicio" aria-label="Inicio Primavera P6 en Obra">
+    <img src="assets/grua-clara.svg" alt="" width="24" height="26">
+    <span class="brand-word">
+      <span class="brand-word__p6">P6</span>
+      <span class="brand-word__obra">en Obra</span>
+    </span>
+  </a>
+
+  <nav aria-label="Secciones del expediente">
+    <ul class="dossier-tabs">
+      <li><a href="#metodo">El Método</a></li>
+      <li><a href="#guias">Guías Técnicas</a></li>
+      <li><a href="#ruta-cero">Ruta Cero</a></li>
+      <li><a href="#libro">Libro + Kit</a></li>
+    </ul>
+  </nav>
+
+  <a class="nav-cta" href="#ruta-cero">RUTA CERO GRATIS</a>
+</header>
+
+<main id="inicio">
+
+  <!-- ===================================================================
+       ACTO 1: HERO DIMENSIONAL HÍBRIDO (Obra al atardecer + Portadas P6)
+       =================================================================== -->
+  <section class="hero-act" aria-labelledby="hero-heading">
+    <div class="hero-plane-bg" aria-hidden="true">
+      <img src="assets/hero-site-bg.webp" alt="" width="1600" height="896" fetchpriority="high">
+    </div>
+    <div class="hero-scrim" aria-hidden="true"></div>
+    <div class="hero-plane-grid" aria-hidden="true"></div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="hero-kicker">CONSTRUCCIÓN Y MINERÍA · EDICIÓN EN ESPAÑOL</p>
+        <h1 id="hero-heading" class="hero-title">Lleva Primavera P6 al control real de tu obra.</h1>
+        <p class="hero-sub">Un cronograma prolijo no prueba que la faena esté bajo control. Parte gratis con Ruta Cero, consulta las Guías Técnicas o domina el método completo con el libro de 340 páginas y el Kit Excel v5.</p>
+        <div class="hero-actions">
+          <a class="p6-btn p6-btn--amarillo" href="#ruta-cero">EMPEZAR CON RUTA CERO</a>
+          <a class="p6-btn p6-btn--oscuro" href="#libro">VER LIBRO + KIT EXCEL v5</a>
+        </div>
+        <div class="hero-proof">
+          <span>PDF 340 páginas · 60 capítulos</span>
+          <span>Kit Excel v5 · 13 hojas editables</span>
+          <span>Ruta Cero gratuita · 21 páginas</span>
+        </div>
+      </div>
+
+      <div class="hero-objects">
+        <figure class="hero-book-card">
+          <span class="hero-book-tag" data-p6-text="libro-precio-actual">$29.900 CLP</span>
+          <img src="assets/portada-libro.webp" alt="Portada del libro Primavera P6 en Obra Edición Profesional" width="520" height="720">
+        </figure>
+        <figure class="hero-guide-card">
+          <img src="assets/portada-ruta-cero.webp" alt="Portada de la guía gratuita Ruta Cero Primavera P6 en Obra" width="360" height="500">
+          <span>Guía gratis · 21 pág.</span>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Puente táctil hacia la mesa de corte verde -->
+  <div class="desk-bridge" aria-hidden="true">
+    <span class="desk-bridge__label">MESA DE CONTROL · CRITERIO DE TERRENO</span>
+  </div>
+
+  <!-- ===================================================================
+       ACTO 2: PICO EMOCIONAL + SIGNATURE MOVE (Auditoría de Corte en Vivo)
+       =================================================================== -->
+  <section id="metodo" class="audit-act tapete-grid" data-sc-act="pin" data-sc-span="2.4">
+    <div data-sc-stage class="audit-stage">
+      <div class="audit-grid">
+        <div class="audit-copy">
+          <h2 data-sc-cue="0 1 0 0">Mismo cronograma. Un clic mueve la entrega 10 días.</h2>
+          <p>Cuando en terreno una actividad parte fuera de secuencia, Primavera P6 te obliga a elegir una regla de cálculo. Si dejas <strong>Progress Override</strong> activo, la barra se solapa en pantalla y te maquilla la fecha de entrega. Con <strong>Retained Logic</strong> aparece el atraso real antes de entrar al comité.</p>
+          <div class="audit-controls" role="group" aria-label="Cambiar modo de cálculo en P6">
+            <button id="btn-override" class="audit-toggle" type="button" aria-pressed="true">Progress Override</button>
+            <button id="btn-retained" class="audit-toggle" type="button" aria-pressed="false">Retained Logic</button>
+          </div>
+        </div>
+
+        <div id="audit-sheet" class="hoja audit-sheet" aria-live="polite">
+          <div class="audit-sheet__head">
+            <h3 class="audit-sheet__title">Auditoría de corte · F9</h3>
+            <span class="audit-sheet__source">Ejemplo didáctico · Cap. 19</span>
+          </div>
+
+          <div class="gantt-box">
+            <div class="gantt-scale">
+              <span>Día 0</span>
+              <span>Día 6</span>
+              <span>Día 14</span>
+              <span>Día 24</span>
+            </div>
+            <div class="gantt-datadate" aria-hidden="true"></div>
+
+            <div class="gantt-row">
+              <div class="gantt-row__label">
+                <span>1. Tendido de cables (Predecesora FS)</span>
+                <span>14 días</span>
+              </div>
+              <div class="gantt-track">
+                <div class="gantt-bar gantt-bar--cables">En curso (14 d)</div>
+              </div>
+            </div>
+
+            <div class="gantt-row">
+              <div class="gantt-row__label">
+                <span>2. Pruebas eléctricas (Iniciada fuera de secuencia)</span>
+                <span>10 días</span>
+              </div>
+              <div class="gantt-track">
+                <div id="bar-pruebas-label" class="gantt-bar gantt-bar--pruebas">Pruebas (solape falso)</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="audit-verdict">
+            <div class="audit-metric">
+              <strong id="audit-finish-day">Día 14 (entrega aparente)</strong>
+              <span id="audit-finish-note">Progress Override ignora el vínculo pendiente y solapa la actividad sin frentes.</span>
+            </div>
+            <div class="p6-timbre" aria-hidden="true">+10 DÍAS<br>OCULTOS</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       ACTO 3: GUÍAS TÉCNICAS (Bandeja lateral PAN)
+       =================================================================== -->
+  <section id="guias" class="guides-act" data-sc-act="pan" data-sc-span="3.6">
+    <div data-sc-stage class="guides-stage">
+      <div class="guides-rail" data-sc-pan="0.06">
+        <div class="guides-lead">
+          <h2>Guías Técnicas de terreno</h2>
+          <p>Cuatro problemas que rompen cronogramas cada semana en construcción y minería, explicados con ejemplos numéricos verificables.</p>
+          <div class="guides-lead__photo">
+            <img src="assets/desk-office-photo.webp" alt="Mesa de trabajo de oficina técnica con tapete verde, escalímetro y planos" width="640" height="360">
+          </div>
+        </div>
+
+        <article class="guide-card">
+          <div>
+            <div class="guide-card__num">GUÍA 01 · CURVA S</div>
+            <h3>Avance al 52 % no significa ir al día</h3>
+            <p>Cómo separar avance físico real de horas hombre quemadas y leer una Curva S antes de que la brecha se vuelva irrecuperable.</p>
+          </div>
+          <div class="guide-card__foot">
+            <span class="guide-card__tag">Control de avance</span>
+            <a class="guide-card__link" href="https://payhip.com/P6enObra/blog/news" data-p6-link="guia-01" target="_blank" rel="noopener">Leer guía</a>
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <div>
+            <div class="guide-card__num">GUÍA 02 · CORTE</div>
+            <h3>Actualizar sin maquillar el programa</h3>
+            <p>La regla de la Data Date: antes del corte solo entran hechos respaldados por terreno; la línea base nunca se mueve para esconder atrasos.</p>
+          </div>
+          <div class="guide-card__foot">
+            <span class="guide-card__tag">Actualización F9</span>
+            <a class="guide-card__link" href="https://payhip.com/P6enObra/blog/news" data-p6-link="guia-02" target="_blank" rel="noopener">Leer guía</a>
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <div>
+            <div class="guide-card__num">GUÍA 03 · PRODUCTIVIDAD</div>
+            <h3>Control de Horas Hombre en P6 y Excel</h3>
+            <p>Por qué el dato decisivo no es cuánto gastaste esta semana, sino con cuánto vas a terminar: proyección EAC = Actual + Remaining.</p>
+          </div>
+          <div class="guide-card__foot">
+            <span class="guide-card__tag">HH y Forecast</span>
+            <a class="guide-card__link" href="https://payhip.com/P6enObra/blog/news" data-p6-link="guia-03" target="_blank" rel="noopener">Leer guía</a>
+          </div>
+        </article>
+
+        <article class="guide-card">
+          <div>
+            <div class="guide-card__num">GUÍA 04 · RECUPERACIÓN</div>
+            <h3>Reprogramar con criterio operativo</h3>
+            <p>Bajar duraciones a mano mueve la barra en pantalla pero no crea cuadrillas. Cómo sustentar cada día recuperado en comité técnico.</p>
+          </div>
+          <div class="guide-card__foot">
+            <span class="guide-card__tag">Ruta crítica</span>
+            <a class="guide-card__link" href="https://payhip.com/P6enObra/blog/news" data-p6-link="guia-04" target="_blank" rel="noopener">Leer guía</a>
+          </div>
+        </article>
+
+        <div class="guides-end-note">
+          <h3>¿Partes desde cero en Primavera P6?</h3>
+          <p>Antes de pasar a auditoría avanzada, arma tu primer proyecto limpio con la guía gratuita Ruta Cero.</p>
+          <a class="p6-btn p6-btn--amarillo" href="#ruta-cero">IR A RUTA CERO</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       ACTO 4: RUTA CERO GRATIS (Reveal + Portada real + Hotmart Send)
+       =================================================================== -->
+  <section id="ruta-cero" class="section-pad tapete-grid" data-sc-act="flow">
+    <div class="wrap rutacero-grid">
+      <div class="rutacero-visual" data-sc-reveal="up" data-sc-reveal-at="0.1 0.55">
+        <figure class="rutacero-cover-frame">
+          <img src="assets/portada-ruta-cero.webp" alt="Portada de la guía gratuita Ruta Cero Primavera P6 en Obra (21 páginas)" width="540" height="756">
+          <figcaption class="rutacero-caption">
+            <span>PDF GRATUITO · 21 PÁGINAS</span>
+            <span>PROYECTO P6-RUTA0</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="hoja hoja--giro-der" data-sc-in data-sc-stagger="60">
+        <p class="etiqueta-mono">GUÍA DE INICIACIÓN · DESCARGA GRATUITA</p>
+        <h2 style="font-family:var(--font-serif);font-size:clamp(1.85rem,3vw,2.5rem);line-height:1.12;margin:0 0 14px;">Aprende Primavera P6 desde cero y haz tu <span class="marca-amarilla">primer corte de avance</span>.</h2>
+        <p>Ruta Cero recorre paso a paso desde crear el proyecto <strong>P6-RUTA0</strong> hasta guardar la línea base, fijar la Data Date y explicar por qué se corrió la entrega, sin relleno teórico desconectado de la faena.</p>
+
+        <ul class="rutacero-list">
+          <li><strong>Interfaz sin perderte:</strong> EPS, proyectos, WBS, tabla de actividades, Gantt y Activity Details.</li>
+          <li><strong>Lógica real con F9:</strong> relaciones Fin-Inicio sin forzar fechas a mano ni sobrecargar restricciones.</li>
+          <li><strong>Primer corte real:</strong> línea base, Data Date, avances respaldados y Remaining Duration.</li>
+          <li><strong>Laboratorio numérico + glosario:</strong> verifica tus cálculos y revisa el índice de los 60 capítulos del libro.</li>
+        </ul>
+
+        <div id="hotmart-send-slot" class="hotmart-send-box">
+          <a class="p6-btn p6-btn--amarillo" style="width:100%;" href="https://payhip.com/b/OI2bp" data-p6-link="ruta-cero-descarga" data-p6-text="ruta-cero-cta" target="_blank" rel="noopener">DESCARGAR RUTA CERO GRATIS</a>
+          <p class="hotmart-send-box__note">PDF digital gratuito de 21 páginas. Basado en Primavera P6 Professional v22. No incluye licencia de P6 ni clases en vivo. Material independiente sin afiliación con Oracle.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================================================================
+       ACTO 5: EL LIBRO COMPLETO + KIT EXCEL v5 (Cierre Placa Noche)
+       =================================================================== -->
+  <section id="libro" class="section-pad tapete-grid" data-sc-act="flow">
+    <div class="wrap">
+      <div class="book-preview-grid">
+        <div class="hoja hoja--giro-izq" data-sc-in data-sc-stagger="60">
+          <h2 style="font-family:var(--font-serif);font-size:clamp(1.85rem,3vw,2.55rem);line-height:1.12;margin:0 0 14px;">Libro profesional + Kit Excel v5 editable</h2>
+          <p>Para el profesional que necesita defender su programa en comité técnico, auditar ruta crítica, proyectar horas hombre y entregar reportes limpios sin empezar cada planilla desde cero.</p>
+
+          <div class="stats-strip">
+            <div class="stat-tile">
+              <span class="stat-tile__num" data-sc-count="340">340</span>
+              <span class="stat-tile__label">Páginas PDF</span>
+            </div>
+            <div class="stat-tile">
+              <span class="stat-tile__num" data-sc-count="60">60</span>
+              <span class="stat-tile__label">Capítulos</span>
+            </div>
+            <div class="stat-tile">
+              <span class="stat-tile__num" data-sc-count="12">12</span>
+              <span class="stat-tile__label">Casos reales</span>
+            </div>
+            <div class="stat-tile">
+              <span class="stat-tile__num" data-sc-count="13">13</span>
+              <span class="stat-tile__label">Hojas Excel</span>
+            </div>
+          </div>
+
+          <div class="parts-grid">
+            <div class="part-item"><strong>Parte I · Cap. 1 a 10</strong>WBS, códigos, calendarios, HH, lógica, restricciones e hitos.</div>
+            <div class="part-item"><strong>Parte II · Cap. 11 a 20</strong>Línea base, Data Date, Retained Logic vs. Progress Override y cierres.</div>
+            <div class="part-item"><strong>Parte III · Cap. 21 a 30</strong>Holguras, ruta más larga, Multiple Float Paths y auditoría DCMA 14 puntos.</div>
+            <div class="part-item"><strong>Parte IV · Cap. 31 a 40</strong>Avance físico vs. HH, Curvas S, turnos mineros, 3WLA y restricciones.</div>
+            <div class="part-item"><strong>Parte V · Cap. 41 a 50</strong>Proyección EAC, Earned Schedule, POM, recuperación y puentes de atraso.</div>
+            <div class="part-item"><strong>Parte VI · Cap. 51 a 60</strong>Reportes ejecutivos, Costos y Contratos, PPC, KPI, riesgo y cierre.</div>
+          </div>
+        </div>
+
+        <figure class="excel-frame" data-sc-in>
+          <img src="assets/captura-kit-excel.webp" alt="Captura real de la Curva S y panel de control del Kit Excel v5 editable" width="900" height="580">
+          <figcaption><strong>Captura real del Kit Excel v5 (.xlsx, 260 KB):</strong> 13 hojas editables con Dashboard ejecutivo, Curva S, control de HH, 3WLA, registro de restricciones y proyección EAC.</figcaption>
+        </figure>
+      </div>
+
+      <!-- Placa Noche: ficha de producto en trato "usted" -->
+      <div class="placa-noche">
+        <div class="placa-noche__cover">
+          <img src="assets/portada-libro.webp" alt="Libro digital Primavera P6 en Obra Edición 2.1 más Kit Excel v5" width="460" height="640">
+        </div>
+
+        <div>
+          <p class="etiqueta-mono" style="color:var(--amarillo);">EDICIÓN 2.1 · DESCARGA DIGITAL INMEDIATA EN HOTMART</p>
+          <h2>Lleve Primavera P6 al control real de su obra.</h2>
+          <p>Incluye los 2 archivos completos de pago único: el libro digital en PDF (340 páginas, 19 MB, con Ruta Cero integrada y 21 anexos técnicos A a U) más el Kit Excel v5 editable (13 hojas listas para su oficina técnica).</p>
+
+          <div class="price-row">
+            <span class="price-now" data-p6-text="libro-precio-actual">$29.900 CLP</span>
+            <span class="price-before" data-p6-text="libro-precio-antes">$39.900 CLP</span>
+          </div>
+          <p class="price-meta" data-p6-text="libro-cupos">Primeras 20 compras · Quedan 19 de 20 cupos</p>
+
+          <a class="p6-btn p6-btn--amarillo" href="https://pay.hotmart.com/R108267470I" data-p6-link="libro-checkout" data-p6-text="libro-cta" target="_blank" rel="noopener">COMPRAR LIBRO + KIT EN HOTMART</a>
+        </div>
+      </div>
+
+      <!-- Autor y Preguntas Frecuentes -->
+      <div class="author-faq-grid">
+        <div class="hoja hoja--giro-izq">
+          <p class="etiqueta-mono">EL AUTOR</p>
+          <h3 style="font-family:var(--font-serif);font-size:1.75rem;margin:0 0 12px;">Neri Peralta</h3>
+          <p style="margin:0 0 12px;">Planner y especialista en control de proyectos aplicado a construcción y minería.</p>
+          <p style="margin:0;">Escribió <em>Primavera P6 en Obra</em> para conectar las funciones de Primavera P6 Professional v22 con las cuatro reglas operativas que sostienen un programa frente a terreno, mandante y comité técnico.</p>
+        </div>
+
+        <div class="faq-list" aria-label="Preguntas frecuentes">
+          <details class="faq-item" open>
+            <summary>¿Qué recibe exactamente al comprar en Hotmart?</summary>
+            <p>Acceso inmediato para descargar el libro profesional en PDF (Edición 2.1, 340 páginas, 19 MB) y el archivo editable Kit Excel v5 (.xlsx, 260 KB, 13 hojas). Pago único, sin suscripciones.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Incluye la licencia del software Primavera P6?</summary>
+            <p>No. El libro y las guías son material formativo independiente basado en Primavera P6 Professional v22, sin afiliación ni patrocinio de Oracle.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Necesito experiencia previa para empezar?</summary>
+            <p>Si parte desde cero, puede descargar primero Ruta Cero gratis (21 páginas) y avanzar luego al libro completo, que también incluye Ruta Cero integrada al inicio.</p>
+          </details>
+          <details class="faq-item">
+            <summary>¿Las planillas del Kit Excel v5 se pueden editar?</summary>
+            <p>Sí. Las 13 hojas vienen en formato .xlsx editable para adaptarlas a sus códigos WBS, calendarios, turnos mineros y formatos de informe.</p>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-legal">
+      <strong>Primavera P6 en Obra</strong> · Neri Peralta. Material técnico independiente para construcción y minería. Primavera P6 es marca registrada de Oracle; este sitio no tiene afiliación ni patrocinio de Oracle.
+    </div>
+    <div class="footer-links">
+      <a href="mailto:contacto.p6enobra@gmail.com" data-p6-link="email" data-p6-text="contacto-email">contacto.p6enobra@gmail.com</a>
+      <a href="https://www.instagram.com/primaverap6enobra/" data-p6-link="instagram" data-p6-text="contacto-ig" target="_blank" rel="noopener">@primaverap6enobra</a>
+    </div>
+  </div>
+</footer>
+
+<script src="config.js"></script>
+<script src="engine/scrollcraft.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
