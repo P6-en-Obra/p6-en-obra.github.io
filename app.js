@@ -50,6 +50,17 @@
     const embedSlot = document.getElementById("hotmart-send-slot");
     if (embedSlot && cfg.rutaCero && cfg.rutaCero.hotmartSendEmbedHtml && cfg.rutaCero.hotmartSendEmbedHtml.trim() !== "") {
       embedSlot.innerHTML = cfg.rutaCero.hotmartSendEmbedHtml;
+      const sendForm = embedSlot.querySelector("form[klicksend-form-id]");
+      if (sendForm && window.location.search) {
+        try {
+          const pageParams = new URLSearchParams(window.location.search);
+          const formUrl = new URL(sendForm.action);
+          pageParams.forEach(function (val, key) {
+            if (!formUrl.searchParams.has(key)) formUrl.searchParams.set(key, val);
+          });
+          sendForm.action = formUrl.toString();
+        } catch (_) {}
+      }
     }
   }
 

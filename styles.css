@@ -989,6 +989,75 @@ summary:focus-visible {
   margin: 12px 0 0;
 }
 
+.p6-send-form {
+  display: grid;
+  gap: 12px;
+}
+
+.p6-send-form__fields {
+  display: grid;
+  gap: 8px;
+}
+
+.p6-send-form__label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--tinta);
+}
+
+.p6-send-form__input {
+  width: 100%;
+  padding: 12px 14px;
+  border: 2px solid var(--tinta);
+  border-radius: 0;
+  background: var(--papel);
+  color: var(--tinta);
+  font-family: var(--font-sans);
+  font-size: 15px;
+}
+
+.p6-send-form__input:focus {
+  outline: 2px solid var(--verde);
+  outline-offset: 2px;
+  background: var(--blanco);
+}
+
+.p6-send-form__gdpr-text {
+  font-size: 11px;
+  line-height: 1.45;
+  color: var(--gris);
+}
+
+.p6-send-form__gdpr-text a {
+  color: var(--tinta);
+  text-decoration: underline;
+}
+
+.p6-send-form__check {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--tinta);
+  cursor: pointer;
+}
+
+.p6-send-form__check input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  flex-shrink: 0;
+  accent-color: var(--verde);
+}
+
+.p6-send-form__submit {
+  width: 100%;
+}
+
 /* =========================================================================
    ACTO 5: EL LIBRO COMPLETO + KIT EXCEL v5 (Sustancia + Placa Noche)
    ========================================================================= */
